@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Cozy Studio in Downtown",
+      "image": "/placeholder.svg?height=200&width=300",
+      "price": 4000,
+      "rating": 4.8,
+      "reviews": 120,
+      "type": "Entire apartment",
+      "beds": 1
+    },
+    {
+      "id": 2,
+      "title": "Luxurious Penthouse with City View",
+      "image": "/placeholder.svg?height=200&width=300",
+      "price": 3500,
+      "rating": 4.9,
+      "reviews": 85,
+      "type": "Entire apartment",
+      "beds": 2
+    },
+    {
+      "id": 3,
+      "title": "Charming Cottage near the Beach",
+      "image": "/placeholder.svg?height=200&width=300",
+      "price": 2500,
+      "rating": 4.7,
+      "reviews": 95,
+      "type": "Entire house",
+      "beds": 3
+    },
+    {
+      "id": 4,
+      "title": "Modern Loft in Arts District",
+      "image": "/placeholder.svg?height=200&width=300",
+      "price": 2000,
+      "rating": 4.6,
+      "reviews": 70,
+      "type": "Entire loft",
+      "beds": 2
+    }
+  ]

@@ -1,19 +1,26 @@
-
-
 import { Menu, Search, Globe } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Logo } from '@/app/(markting)/_components/Logo'
-
 import { UserButton } from '@clerk/clerk-react'
+import Link from 'next/link'
+import { useSearch } from '@/components/providers/SearchContext';
 
 export default function Navbar() {
+  const { searchQuery, setSearchQuery } = useSearch();
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+    console.log('Search query updated:', event.target.value); // Log search query
+  };
 
   return (
     <nav className="border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-          <Logo/>
+            <Link href='/home'>
+              <Logo />
+            </Link>
           </div>
 
           {/* Search bar - hidden on mobile */}
@@ -22,6 +29,8 @@ export default function Navbar() {
               <input
                 type="text"
                 placeholder="Start your search"
+                value={searchQuery}
+                onChange={handleSearchChange}
                 className="w-full border rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-rose-500"
               />
               <button
@@ -35,20 +44,17 @@ export default function Navbar() {
 
           {/* Right side menu */}
           <div className="flex items-center">
-         
             <Button variant="ghost" size="icon" className="ml-2" aria-label="Change language">
               <Globe className="h-5 w-5" />
             </Button>
 
             {/* User menu dropdown */}
-            
-                <Button variant="outline" size="icon" className="ml-2 w-20 border-gray-300">
-                  <Menu className="h-5 w-5" />
-                  <div className='h-5 w-5'>
-                     <UserButton />
-                  </div>
-                </Button>
-              
+            <Button variant="outline" size="icon" className="ml-2 w-20 border-gray-300">
+              <Menu className="h-5 w-5" />
+              <div className='h-5 w-5'>
+                <UserButton />
+              </div>
+            </Button>
           </div>
         </div>
       </div>
@@ -59,6 +65,8 @@ export default function Navbar() {
           <input
             type="text"
             placeholder="Start your search"
+            value={searchQuery}
+            onChange={handleSearchChange}
             className="w-full border rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-rose-500"
           />
           <button

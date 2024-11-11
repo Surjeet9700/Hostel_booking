@@ -13,6 +13,9 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as functions_fetchData from "../functions/fetchData.js";
+import type * as functions_storeData from "../functions/storeData.js";
+import type * as functions_storeInitialData from "../functions/storeInitialData.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -22,7 +25,11 @@ import type {
  * const myFunctionReference = api.myModule.myFunction;
  * ```
  */
-declare const fullApi: ApiFromModules<{}>;
+declare const fullApi: ApiFromModules<{
+  "functions/fetchData": typeof functions_fetchData;
+  "functions/storeData": typeof functions_storeData;
+  "functions/storeInitialData": typeof functions_storeInitialData;
+}>;
 export declare const api: FilterApi<
   typeof fullApi,
   FunctionReference<any, "public">
