@@ -63,20 +63,38 @@ export const SelectedHostelProvider: React.FC<{ children: ReactNode }> = ({ chil
 
   // Load bookings and hostels from localStorage on mount
   useEffect(() => {
+    // Load bookings
     const storedBookings = localStorage.getItem('bookings');
     if (storedBookings) {
       try {
         const parsedBookings: Booking[] = JSON.parse(storedBookings);
         setBookings(parsedBookings);
+        console.log("Loaded Bookings from localStorage:", parsedBookings); // Debugging
       } catch (error) {
         console.error("Failed to parse bookings from localStorage:", error);
         localStorage.removeItem('bookings');
       }
     }
 
-    // **Modified Section Starts Here**
-    // Always fetch the latest hostels data to prevent using stale data
-    const fetchHostels = async () => {
+    // Load hostels or fetch from API
+    const storedHostels = localStorage.getItem('hostels');
+    if (storedHostels) {
+      try {
+        const parsedHostels: Hostel[] = JSON.parse(storedHostels);
+        setHostels(parsedHostels);
+        console.log("Loaded Hostels from localStorage:", parsedHostels); // Debugging
+      } catch (error) {
+        console.error("Failed to parse hostels from localStorage:", error);
+        localStorage.removeItem('hostels');
+        fetchHostels();
+      }
+    } else {
+      // Fetch hostels from an API or define them statically
+      fetchHostels();
+    }
+
+    // Function to fetch hostels from API
+    async function fetchHostels() {
       try {
         const response = await fetch('/api/hostels', { cache: 'no-store' }); // Prevent caching
         if (!response.ok) {
@@ -91,44 +109,63 @@ export const SelectedHostelProvider: React.FC<{ children: ReactNode }> = ({ chil
         // Optionally, you can set hostels to an empty array or keep existing data
         setHostels([]);
       }
-    };
-
-    fetchHostels();
-    // **Modified Section Ends Here**
+    }
   }, []);
 
   // Save bookings to localStorage whenever they change
   useEffect(() => {
-    localStorage.setItem('bookings', JSON.stringify(bookings));
+    try {
+      localStorage.setItem('bookings', JSON.stringify(bookings));
+      console.log("Saved Bookings to localStorage:", bookings); // Debugging
+    } catch (error) {
+      console.error("Failed to save bookings to localStorage:", error);
+    }
   }, [bookings]);
 
   // Save hostels to localStorage whenever they change
   useEffect(() => {
     if (hostels.length > 0) {
-      localStorage.setItem('hostels', JSON.stringify(hostels));
+      try {
+        localStorage.setItem('hostels', JSON.stringify(hostels));
+        console.log("Saved Hostels to localStorage:", hostels); // Debugging
+      } catch (error) {
+        console.error("Failed to save hostels to localStorage:", error);
+      }
     }
   }, [hostels]);
 
   // Function to add a new booking
   const addBooking = (booking: Booking) => {
-    console.log("Adding Booking:", booking);
-    setBookings(prev => [...prev, booking]);
+    console.log("Adding Booking:", booking); // Debugging
+    setBookings(prev => {
+      const updatedBookings = [...prev, booking];
+      console.log("Updated Bookings:", updatedBookings); // Debugging
+      return updatedBookings;
+    });
   };
 
   // Function to remove a booking by its bookingId
   const removeBooking = (bookingId: string) => {
-    setBookings(prev => prev.filter(b => b.bookingId !== bookingId));
+    console.log(`Removing Booking with ID: ${bookingId}`); // Debugging
+    setBookings(prev => {
+      const updatedBookings = prev.filter(b => b.bookingId !== bookingId);
+      console.log("Updated Bookings after Removal:", updatedBookings); // Debugging
+      return updatedBookings;
+    });
   };
 
   // Function to cancel a booking with a reason
   const cancelBooking = (bookingId: string, reason: string) => {
-    setBookings(prev => 
-      prev.map(b => 
+    console.log(`Canceling Booking with ID: ${bookingId} for Reason: ${reason}`); // Debugging
+    setBookings(prev => {
+      const updatedBookings = prev.map(b => 
         b.bookingId === bookingId 
-          ? { ...b, status: 'canceled', cancellationReason: reason } 
+          ? { ...b, status: 'canceled', cancellationReason: reason } as Booking 
           : b
-      )
-    );
+      );
+      console.log("Updated Bookings after Cancellation:", updatedBookings); // Debugging
+      return updatedBookings;
+    });
   };
 
   return (
