@@ -38,22 +38,24 @@ const PaymentPage: React.FC = () => {
     name: '',
   });
 
-    // Helper functions
-    const getRandomLatitude = (): number => {
-      const minLat = 17.1000
-      const maxLat = 17.7000
-      return parseFloat((Math.random() * (maxLat - minLat) + minLat).toFixed(6))
-    }
-  
-    const getRandomLongitude = (): number => {
-      const minLng = 78.2000
-      const maxLng = 78.7000
-      return parseFloat((Math.random() * (maxLng - minLng) + minLng).toFixed(6))
-    }
-  
-    // Generate random coordinates
-    const randomLat = getRandomLatitude()
-    const randomLng = getRandomLongitude()
+  const [isProcessing, setIsProcessing] = useState(false); // Added state to prevent multiple submissions
+
+  // Helper functions
+  const getRandomLatitude = (): number => {
+    const minLat = 17.1000
+    const maxLat = 17.7000
+    return parseFloat((Math.random() * (maxLat - minLat) + minLat).toFixed(6))
+  }
+
+  const getRandomLongitude = (): number => {
+    const minLng = 78.2000
+    const maxLng = 78.7000
+    return parseFloat((Math.random() * (maxLng - minLng) + minLng).toFixed(6))
+  }
+
+  // Generate random coordinates
+  const randomLat = getRandomLatitude()
+  const randomLng = getRandomLongitude()
 
   if (!selectedHostel || !startDate || !endDate) {
     return (
@@ -95,19 +97,16 @@ const PaymentPage: React.FC = () => {
   const totalDays = calculateTotalDays(startDate, endDate);
   const totalPrice = price * totalDays + 75 + 100; // Example fees
 
-  // Validation function for payment details
   const validate = () => {
     let valid = true;
     const newErrors = { cardNumber: '', expiry: '', cvc: '', name: '' };
 
-    // Validate Card Number
     const cardRegex = /^\d{16}$/;
     if (!cardRegex.test(cardNumber)) {
       newErrors.cardNumber = 'Card number must be 16 digits.';
       valid = false;
     }
 
-    // Validate Expiry Date
     const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
     if (!expiryRegex.test(expiry)) {
       newErrors.expiry = 'Expiry date must be in MM/YY format.';
@@ -122,14 +121,12 @@ const PaymentPage: React.FC = () => {
       }
     }
 
-    // Validate CVC
     const cvcRegex = /^\d{3}$/;
     if (!cvcRegex.test(cvc)) {
       newErrors.cvc = 'CVC must be 3 digits.';
       valid = false;
     }
 
-    // Validate Name
     if (name.trim() === '') {
       newErrors.name = 'Name on card is required.';
       valid = false;
@@ -139,43 +136,58 @@ const PaymentPage: React.FC = () => {
     return valid;
   };
 
-  // Handle payment submission
-  const handlePayment = () => {
-    if (validate()) {
-      // Create a new booking object
-      const newBooking: Booking = {
-        bookingId: uuidv4(),
-        hostelId: selectedHostel._id, // Changed from 'id' to '_id'
-        startDate: startDate.toISOString(),
-        endDate: endDate.toISOString(),
-        totalPrice,
-        confirmationCode: generateConfirmationCode(),
-      };
+  const handlePayment = async () => {
+    if (isProcessing) return; // Prevent multiple submissions
+    if (!validate()) return;
 
-      // Add the new booking to context
+    setIsProcessing(true); // Start processing
+
+    const newBooking: Booking = {
+      bookingId: uuidv4(),
+      hostelId: selectedHostel._id, 
+      startDate: startDate.toISOString(),
+      endDate: endDate.toISOString(),
+      totalPrice,
+      confirmationCode: generateConfirmationCode(),
+    };
+
+    try {
+      // Simulate payment processing delay
+      await simulatePaymentProcessing();
+
       addBooking(newBooking);
-      console.log('New Booking Added:', newBooking); // Debugging
+      console.log('New Booking Added:', newBooking); 
 
       router.push(`/booking-confirmation?confirmationCode=${newBooking.confirmationCode}`);
+    } catch (error) {
+      console.error('Payment failed:', error);
+      // Optionally, handle payment failure (e.g., show an error message to the user)
+      alert('Payment failed. Please try again.');
+    } finally {
+      setIsProcessing(false); // End processing
     }
   };
 
-  // Generate a confirmation code
-  const generateConfirmationCode = () => {
+  const generateConfirmationCode = (): string => {
     return uuidv4().split('-').join('').substring(0, 8).toUpperCase();
+  };
+
+  const simulatePaymentProcessing = (): Promise<void> => {
+    // Replace this with actual payment gateway integration
+    return new Promise((resolve) => setTimeout(resolve, 2000));
   };
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-8">
       {/* Header */}
       <div className="flex items-center gap-3 mb-8">
-        <button
-          onClick={() => router.push(`/hostel/${_id}`)} // Changed from 'id' to '_id'
+        <Button
+          onClick={() => router.push(`/rooms/${_id}`)} 
           className="p-1 rounded-full hover:bg-gray-200"
           aria-label="Go back to hostel details"
         >
           <ChevronLeft className="h-5 w-5" />
-        </button>
+        </Button>
         <h1 className="text-lg font-semibold">Confirm and Pay</h1>
       </div>
 
@@ -242,7 +254,7 @@ const PaymentPage: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-2">Location</h3>
             <div className="h-54 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
-            <MapView 
+              <MapView 
                 locations={[
                   {
                     lat: randomLat,        
@@ -349,8 +361,12 @@ const PaymentPage: React.FC = () => {
             </div>
 
             {/* Pay Button */}
-            <Button className="w-full mt-6" onClick={handlePayment}>
-              Pay ₹{totalPrice}
+            <Button 
+              className="w-full mt-6" 
+              onClick={handlePayment}
+              disabled={isProcessing} // Disable button while processing
+            >
+              {isProcessing ? `Processing...` : `Pay ₹${totalPrice}`}
             </Button>
           </div>
         </div>

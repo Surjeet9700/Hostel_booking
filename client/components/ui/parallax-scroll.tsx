@@ -5,17 +5,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-export const ParallaxScrollSecond = ({
-  images,
-  className,
-}: {
+interface ParallaxScrollSecondProps {
   images: string[];
   className?: string;
+}
+
+export const ParallaxScrollSecond: React.FC<ParallaxScrollSecondProps> = ({
+  images,
+  className,
 }) => {
-  const gridRef = useRef<any>(null);
+  const gridRef = useRef<HTMLDivElement>(null); // Updated type
+
   const { scrollYProgress } = useScroll({
-    container: gridRef, // remove this if your container is not fixed height
-    offset: ["start start", "end start"], // remove this if your container is not fixed height
+    container: gridRef, // Ensure container is correctly referenced
+    offset: ["start start", "end start"],
   });
 
   const translateYFirst = useTransform(scrollYProgress, [0, 1], [0, -200]);
@@ -39,7 +42,7 @@ export const ParallaxScrollSecond = ({
     >
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-5xl mx-auto gap-10 py-40 px-10"
-        ref={gridRef}
+        // Removed duplicate ref assignment
       >
         <div className="grid gap-10">
           {firstPart.map((el, idx) => (
@@ -48,14 +51,14 @@ export const ParallaxScrollSecond = ({
                 y: translateYFirst,
                 x: translateXFirst,
                 rotateZ: rotateXFirst,
-              }} // Apply the translateY motion value here
-              key={"grid-1" + idx}
+              }}
+              key={`grid-1-${idx}`}
             >
               <Image
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
+                height={400}
+                width={400}
                 alt="thumbnail"
               />
             </motion.div>
@@ -63,12 +66,12 @@ export const ParallaxScrollSecond = ({
         </div>
         <div className="grid gap-10">
           {secondPart.map((el, idx) => (
-            <motion.div key={"grid-2" + idx}>
+            <motion.div key={`grid-2-${idx}`}>
               <Image
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
+                height={400}
+                width={400}
                 alt="thumbnail"
               />
             </motion.div>
@@ -82,13 +85,13 @@ export const ParallaxScrollSecond = ({
                 x: translateXThird,
                 rotateZ: rotateXThird,
               }}
-              key={"grid-3" + idx}
+              key={`grid-3-${idx}`}
             >
               <Image
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
+                height={400}
+                width={400}
                 alt="thumbnail"
               />
             </motion.div>

@@ -10,9 +10,9 @@ export interface Booking {
   endDate: string;
   totalPrice: number;
   confirmationCode: string;
-  status?: 'active' | 'canceled'; 
-  cancellationReason?: string; 
-};
+  status?: 'active' | 'canceled';
+  cancellationReason?: string;
+}
 
 // Hostel type definition
 export type Hostel = {
@@ -37,15 +37,15 @@ export type Hostel = {
 // Context type including the cancelBooking function
 type SelectedHostelContextType = {
   bookings: Booking[];
-  cancelBooking: (id: string, reason: string) => void;
+  cancelBooking: (id: string, reason: string, shouldPersist?: boolean) => void;
   selectedHostel: Hostel | null;
   setSelectedHostel: (hostel: Hostel | null) => void;
   startDate: Date | undefined;
   setStartDate: (date: Date | undefined) => void;
   endDate: Date | undefined;
   setEndDate: (date: Date | undefined) => void;
-  addBooking: (booking: Booking) => void;
-  removeBooking: (bookingId: string) => void;
+  addBooking: (booking: Booking, shouldPersist?: boolean) => void;
+  removeBooking: (bookingId: string, shouldPersist?: boolean) => void;
   hostels: Hostel[];
   setHostels: (hostels: Hostel[]) => void;
 };
@@ -112,58 +112,73 @@ export const SelectedHostelProvider: React.FC<{ children: ReactNode }> = ({ chil
     }
   }, []);
 
-  // Save bookings to localStorage whenever they change
-  useEffect(() => {
-    try {
-      localStorage.setItem('bookings', JSON.stringify(bookings));
-      console.log("Saved Bookings to localStorage:", bookings); // Debugging
-    } catch (error) {
-      console.error("Failed to save bookings to localStorage:", error);
-    }
-  }, [bookings]);
-
-  // Save hostels to localStorage whenever they change
-  useEffect(() => {
-    if (hostels.length > 0) {
-      try {
-        localStorage.setItem('hostels', JSON.stringify(hostels));
-        console.log("Saved Hostels to localStorage:", hostels); // Debugging
-      } catch (error) {
-        console.error("Failed to save hostels to localStorage:", error);
-      }
-    }
-  }, [hostels]);
-
   // Function to add a new booking
-  const addBooking = (booking: Booking) => {
+  const addBooking = (booking: Booking, shouldPersist: boolean = true) => {
     console.log("Adding Booking:", booking); // Debugging
     setBookings(prev => {
-      const updatedBookings = [...prev, booking];
+      // Check for duplicate bookingId to prevent duplicates
+      const isDuplicate = prev.some(b => b.bookingId === booking.bookingId);
+      if (isDuplicate) {
+        console.warn(`Booking with ID ${booking.bookingId} already exists. Skipping addition.`);
+        return prev;
+      }
+
+      const updatedBookings: Booking[] = [...prev, booking];
       console.log("Updated Bookings:", updatedBookings); // Debugging
+
+      if (shouldPersist) {
+        try {
+          localStorage.setItem('bookings', JSON.stringify(updatedBookings));
+          console.log("Saved Bookings to localStorage:", updatedBookings); // Debugging
+        } catch (error) {
+          console.error("Failed to save bookings to localStorage:", error);
+        }
+      }
+
       return updatedBookings;
     });
   };
 
   // Function to remove a booking by its bookingId
-  const removeBooking = (bookingId: string) => {
+  const removeBooking = (bookingId: string, shouldPersist: boolean = true) => {
     console.log(`Removing Booking with ID: ${bookingId}`); // Debugging
     setBookings(prev => {
-      const updatedBookings = prev.filter(b => b.bookingId !== bookingId);
+      const updatedBookings: Booking[] = prev.filter(b => b.bookingId !== bookingId);
       console.log("Updated Bookings after Removal:", updatedBookings); // Debugging
+
+      if (shouldPersist) {
+        try {
+          localStorage.setItem('bookings', JSON.stringify(updatedBookings));
+          console.log("Saved Bookings to localStorage:", updatedBookings); // Debugging
+        } catch (error) {
+          console.error("Failed to save bookings to localStorage:", error);
+        }
+      }
+
       return updatedBookings;
     });
   };
 
   // Function to cancel a booking with a reason
-  const cancelBooking = (bookingId: string, reason: string) => {
+  const cancelBooking = (bookingId: string, reason: string, shouldPersist: boolean = true) => {
     console.log(`Canceling Booking with ID: ${bookingId} for Reason: ${reason}`); // Debugging
     setBookings(prev => {
-      const updatedBookings = prev.map(b => 
-        b.bookingId === bookingId 
-          ? { ...b, status: 'canceled', cancellationReason: reason } as Booking 
+      const updatedBookings: Booking[] = prev.map(b =>
+        b.bookingId === bookingId
+          ? { ...b, status: 'canceled', cancellationReason: reason }
           : b
       );
       console.log("Updated Bookings after Cancellation:", updatedBookings); // Debugging
+
+      if (shouldPersist) {
+        try {
+          localStorage.setItem('bookings', JSON.stringify(updatedBookings));
+          console.log("Saved Bookings to localStorage:", updatedBookings); // Debugging
+        } catch (error) {
+          console.error("Failed to save bookings to localStorage:", error);
+        }
+      }
+
       return updatedBookings;
     });
   };

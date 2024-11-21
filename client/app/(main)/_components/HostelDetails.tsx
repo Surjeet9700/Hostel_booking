@@ -132,7 +132,7 @@ const HostelDetails: React.FC<HostelDetailsProps> = ({ room }) => {
     };
   
     // Add the booking to the context
-    addBooking(newBooking);
+    addBooking(newBooking, false);
   
     setSelectedHostel(room);
     router.push(`/payment?confirmationCode=${confirmationCode}`);
