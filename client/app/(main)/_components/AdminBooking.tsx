@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Trash2 } from 'lucide-react';
+import { Trash2, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -23,14 +23,20 @@ const cancellationReasons = [
 ];
 
 const AdminBookings: React.FC = () => {
-  const { bookings, hostels, cancelBooking } = useSelectedHostel();
+  const { bookings, hostels, cancelBooking, confirmBooking } = useSelectedHostel();
   const [isCancelDialogOpen, setIsCancelDialogOpen] = useState(false);
+  const [isConfirmDialogOpen, setIsConfirmDialogOpen] = useState(false);
   const [selectedBookingId, setSelectedBookingId] = useState<string | null>(null);
   const [selectedReason, setSelectedReason] = useState<string>('');
 
   const handleOpenCancelDialog = (bookingId: string) => {
     setSelectedBookingId(bookingId);
     setIsCancelDialogOpen(true);
+  };
+
+  const handleOpenConfirmDialog = (bookingId: string) => {
+    setSelectedBookingId(bookingId);
+    setIsConfirmDialogOpen(true);
   };
 
   const handleCancelBooking = () => {
@@ -40,9 +46,17 @@ const AdminBookings: React.FC = () => {
       setSelectedReason('');
       setIsCancelDialogOpen(false);
       alert('Booking has been canceled and the user has been notified.');
-      // Optionally, implement a more sophisticated notification system
     } else {
       alert('Please select a reason for cancellation.');
+    }
+  };
+
+  const handleConfirmBooking = () => {
+    if (selectedBookingId) {
+      confirmBooking(selectedBookingId);
+      setSelectedBookingId(null);
+      setIsConfirmDialogOpen(false);
+      alert('Booking has been confirmed successfully.');
     }
   };
 
@@ -78,18 +92,30 @@ const AdminBookings: React.FC = () => {
                     <strong>Status:</strong>{' '}
                     {booking.status === 'canceled'
                       ? `Canceled (${booking.cancellationReason})`
+                      : booking.status === 'confirmed'
+                      ? 'Confirmed'
                       : 'Active'}
                   </p>
                 </div>
                 {booking.status !== 'canceled' && (
-                  <Button
-                    variant="destructive"
-                    onClick={() => handleOpenCancelDialog(booking.bookingId)}
-                    className="mt-4 md:mt-0"
-                  >
-                    <Trash2 className="mr-2 w-4 h-4" />
-                    Cancel Booking
-                  </Button>
+                  <div className="flex space-x-2 mt-4 md:mt-0">
+                    <Button
+                      variant="destructive"
+                      onClick={() => handleOpenCancelDialog(booking.bookingId)}
+                    >
+                      <Trash2 className="mr-2 w-4 h-4" />
+                      Cancel Booking
+                    </Button>
+                    {booking.status !== 'confirmed' && (
+                      <Button
+                        variant="outline"
+                        onClick={() => handleOpenConfirmDialog(booking.bookingId)}
+                      >
+                        <CheckCircle className="mr-2 w-4 h-4" />
+                        Confirm Booking
+                      </Button>
+                    )}
+                  </div>
                 )}
               </div>
             );
@@ -109,7 +135,7 @@ const AdminBookings: React.FC = () => {
           <div className="mt-4">
             <label className="block text-sm font-medium text-gray-700">Reason</label>
             <select
-              title='cancel reasons'
+              title='confirmation'
               value={selectedReason}
               onChange={(e) => setSelectedReason(e.target.value)}
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -132,6 +158,29 @@ const AdminBookings: React.FC = () => {
               disabled={!selectedReason}
             >
               Confirm Cancellation
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Confirm Booking Dialog */}
+      <Dialog open={isConfirmDialogOpen} onOpenChange={setIsConfirmDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Confirm Booking</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to confirm this booking?
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setIsConfirmDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button
+              variant="secondary"
+              onClick={handleConfirmBooking}
+            >
+              Confirm
             </Button>
           </DialogFooter>
         </DialogContent>

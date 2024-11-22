@@ -18,7 +18,7 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
         "description": "A warm and welcoming shared room near the iconic Charminar, perfect for tourists.",
         "amenities": ["Wifi", "Air Conditioning", "Kitchen", "Laundry", "TV"],
-        "images": ["https://lh3.googleusercontent.com/p/AF1QipM2uSA9CusPoiCj-a0X_lHVpXcsz0ZDvwgJokru=s1360-w1360-h1020", "https://lh3.googleusercontent.com/p/AF1QipNba-0Wj2z2WOFoWZd-D4ll1M3z807Z86n6uYRo=s1360-w1360-h1020"]
+        "images": ["https://lh3.googleusercontent.com/p/AF1QipOzvpCD2VRCa0BiURKaN-0CRAL9883b9G7LNLaa=s680-w680-h510", "https://lh3.googleusercontent.com/p/AF1QipNba-0Wj2z2WOFoWZd-D4ll1M3z807Z86n6uYRo=s1360-w1360-h1020"]
     },
     {
         "title": "Luxurious Stay near Charminar",
@@ -48,11 +48,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
         "description": "A budget-friendly dormitory perfect for backpackers near the historic Charminar.",
         "amenities": ["Shared Kitchen", "Laundry", "Heating", "Free Parking"],
-        "images": ["/images/dormitory1.jpg", "/images/dormitory2.jpg"]
+        "images": ["https://lh3.googleusercontent.com/p/AF1QipNonfciQKfk9AqpOptfnmVWH7LlqPGg21TeQyHT=s1360-w1360-h1020", "/images/dormitory2.jpg"]
     },
     {
         "title": "Peaceful Stay near Gachibowli",
-        "image": "https://www.gopalancolleges.com/gcc/images/hostel-facility.jpg",
+        "image": "https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2022/Dec/09/Photo_h400_w540/GR2-334889-1579841_400_540.jpeg",
         "price": 180,
         "rating": 4.6,
         "reviews": 90,
@@ -63,11 +63,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
         "description": "Experience tranquility with this shared room in the tech hub of Gachibowli.",
         "amenities": ["Wifi", "Kitchen", "Free Parking", "Air Conditioning"],
-        "images": ["/images/gachibowli_room1.jpg", "/images/gachibowli_room2.jpg"]
+        "images": ["https://www.gopalancolleges.com/gcc/images/hostel-facility.jpg", "https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2022/Dec/09/Photo_h400_w540/GR2-334889-1579841_400_540.jpeg"]
     },
     {
         "title": "Budget Room in Jubilee Hills",
-        "image": "https://th.bing.com/th/id/OIP.N5sLHPzbiOUH2NfxKa2U9wHaE8?rs=1&pid=ImgDetMain",
+        "image": "https://img.staticmb.com/mbphoto/pg/grd1/cropped_images/2020/Feb/19/Photo_h400_w540/GR1-5866-275163_400_540.jpg",
         "price": 120,
         "rating": 4.4,
         "reviews": 70,
@@ -78,11 +78,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
         "description": "Affordable private room in the vibrant Jubilee Hills neighborhood.",
         "amenities": ["Wifi", "Kitchen", "Laundry", "Heating"],
-        "images": ["/images/jubilee_room1.jpg", "/images/jubilee_room2.jpg"]
+        "images": ["https://th.bing.com/th/id/OIP.N5sLHPzbiOUH2NfxKa2U9wHaE8?rs=1&pid=ImgDetMain", "https://img.staticmb.com/mbphoto/pg/grd1/cropped_images/2020/Feb/19/Photo_h400_w540/GR1-5866-275163_400_540.jpg"]
     },
     {
         "title": "Exclusive Dormitory in Kondapur",
-        "image": "https://twomonkeystravelgroup.com/wp-content/uploads/2015/09/List-of-the-Best-Hostels-in-India2.jpg",
+        "image": "https://newprojects.99acres.com/projects/unknown/ss__residency/images/sddd.jpg",
         "price": 100,
         "rating": 4.3,
         "reviews": 50,
@@ -93,11 +93,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
         "description": "A clean and spacious dormitory, ideal for budget-conscious travelers in Kondapur.",
         "amenities": ["Shared Kitchen", "Free Parking", "Wifi", "TV"],
-        "images": ["/images/kondapur_dorm1.jpg", "/images/kondapur_dorm2.jpg"]
+        "images": ["https://twomonkeystravelgroup.com/wp-content/uploads/2015/09/List-of-the-Best-Hostels-in-India2.jpg", "https://newprojects.99acres.com/projects/unknown/ss__residency/images/sddd.jpg"]
     },
     {
         "title": "Heritage Hostel near Begumpet",
-        "image": "https://htl-img-res-new.s3.ap-south-1.amazonaws.com/447/20200203/4.jpg",
+        "image": "https://th.bing.com/th/id/OIP.ZzayXUUp8ybmPQj6q9ks2gHaEK?rs=1&pid=ImgDetMain",
         "price": 220,
         "rating": 4.7,
         "reviews": 110,
@@ -108,11 +108,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
         "description": "A heritage-style hostel offering a cultural experience in Begumpet.",
         "amenities": ["Wifi", "Free Breakfast", "Air Conditioning", "Heating"],
-        "images": ["/images/begumpet_room1.jpg", "/images/begumpet_room2.jpg"]
+        "images": ["https://htl-img-res-new.s3.ap-south-1.amazonaws.com/447/20200203/4.jpg", "https://th.bing.com/th/id/OIP.ZzayXUUp8ybmPQj6q9ks2gHaEK?rs=1&pid=ImgDetMain"]
     },
     {
         "title": "Classic Stay near Hussain Sagar",
-        "image": "https://www.nmit.ac.in/img/hostel-1/hostel-1.jpg",
+        "image": "https://content.jdmagicbox.com/comp/nagpur/y7/0712px712.x712.160715110103.i9y7/catalogue/shiv-residency-girls-hostel-gittikhadan-nagpur-hostels-for-women-17jfixw.jpg",
         "price": 160,
         "rating": 4.5,
         "reviews": 65,
@@ -123,11 +123,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
         "description": "A classic private room with serene views of Hussain Sagar lake.",
         "amenities": ["Wifi", "TV", "Heating", "Free Parking"],
-        "images": ["/images/hussain_sagar1.jpg", "/images/hussain_sagar2.jpg"]
+        "images": ["https://www.nmit.ac.in/img/hostel-1/hostel-1.jpg", "https://content.jdmagicbox.com/comp/nagpur/y7/0712px712.x712.160715110103.i9y7/catalogue/shiv-residency-girls-hostel-gittikhadan-nagpur-hostels-for-women-17jfixw.jpg"]
     },
     {
         "title": "Elegant Stay in Shamshabad",
-        "image": "https://www.ipeindia.org/wp-content/uploads/2022/07/AND00968-scaled.jpg",
+        "image": "https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/20499/2020/5/16/Campus%20View%20of%20Teresian%20College%20Mysore_Campus-View.jpg",
         "price": 200,
         "rating": 4.6,
         "reviews": 80,
@@ -138,11 +138,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
         "description": "A modern shared stay near the airport, convenient for travelers.",
         "amenities": ["Wifi", "Air Conditioning", "Kitchen", "Heating"],
-        "images": ["/images/shamshabad1.jpg", "/images/shamshabad2.jpg"]
+        "images": ["https://www.ipeindia.org/wp-content/uploads/2022/07/AND00968-scaled.jpg", "https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/20499/2020/5/16/Campus%20View%20of%20Teresian%20College%20Mysore_Campus-View.jpg"]
     },
     {
         "title": "Backpacker Hostel in Secunderabad",
-        "image": "https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/5cb6cc8b66a2f65fbe0ab67e/h400_0_Cover.jpg",
+        "image": "https://assets.static-collegedunia.com/public/college_data/images/campusimage/1471429515p9.JPG",
         "price": 900,
         "rating": 4.3,
         "reviews": 40,
@@ -153,11 +153,11 @@ const hostelData = [
         "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
         "description": "An affordable backpacker's haven in the bustling Secunderabad area.",
         "amenities": ["Shared Kitchen", "Free Wifi", "Laundry", "Heating"],
-        "images": ["/images/secunderabad1.jpg", "/images/secunderabad2.jpg"]
+        "images": ["https://play-zelo-production.s3.ap-south-1.amazonaws.com/uploads/center/cover_photo/5cb6cc8b66a2f65fbe0ab67e/h400_0_Cover.jpg", "https://assets.static-collegedunia.com/public/college_data/images/campusimage/1471429515p9.JPG"]
        },
         {
             "title": "Modern Hostel in Gachibowli",
-            "image": "https://5.imimg.com/data5/SELLER/Default/2021/3/ZQ/CY/OW/124369965/sri-sai-happy-stay-pg-for-girls-in-hsr-layout-500x500.jpg",
+            "image": "https://images.uniapply.com/uploads/college/image/500/3613/webp/Gopalan_Twinklers_School_6724_Building_UA_1.webp",
             "price": 160,
             "rating": 4.4,
             "reviews": 70,
@@ -168,11 +168,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
             "description": "A modern private room in the tech hub of Gachibowli.",
             "amenities": ["Wifi", "Air Conditioning", "Free Parking", "Kitchen"],
-            "images": ["/images/gachibowli_modern1.jpg", "/images/gachibowli_modern2.jpg"]
+            "images": ["https://5.imimg.com/data5/SELLER/Default/2021/3/ZQ/CY/OW/124369965/sri-sai-happy-stay-pg-for-girls-in-hsr-layout-500x500.jpg", "https://images.uniapply.com/uploads/college/image/500/3613/webp/Gopalan_Twinklers_School_6724_Building_UA_1.webp"]
         },
         {
             "title": "Elegant Room in Gachibowli",
-            "image": "https://mudumalaitigereserve.s3.ap-south-1.amazonaws.com/1697625507403.jpg",
+            "image": "https://image-static.collegedunia.com/public/college_data/images/campusimage/14250166555.JPG",
             "price": 240,
             "rating": 4.8,
             "reviews": 95,
@@ -183,11 +183,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
             "description": "An elegant shared room with premium amenities in Gachibowli.",
             "amenities": ["Pool", "Gym", "Wifi", "Kitchen"],
-            "images": ["/images/gachibowli_elegant1.jpg", "/images/gachibowli_elegant2.jpg"]
+            "images": ["https://mudumalaitigereserve.s3.ap-south-1.amazonaws.com/1697625507403.jpg", "https://image-static.collegedunia.com/public/college_data/images/campusimage/14250166555.JPG"]
         },
         {
             "title": "Budget Stay in Gachibowli",
-            "image": "https://5.imimg.com/data5/SELLER/Default/2022/2/XR/FY/WU/147872314/triple-bedroom-jpeg-500x500.jpeg",
+            "image": "https://content.jdmagicbox.com/comp/hyderabad/k6/040pxx40.xx40.170401144601.r9k6/catalogue/keerthi-girls-hostel-shamshabad-rangareddy-hostels-for-men-ida07hpi80.jpg",
             "price": 120,
             "rating": 4.3,
             "reviews": 50,
@@ -198,11 +198,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
             "description": "Affordable private accommodation in Gachibowli, ideal for students.",
             "amenities": ["Free Wifi", "Laundry", "Air Conditioning"],
-            "images": ["/images/gachibowli_budget1.jpg", "/images/gachibowli_budget2.jpg"]
+            "images": ["https://5.imimg.com/data5/SELLER/Default/2022/2/XR/FY/WU/147872314/triple-bedroom-jpeg-500x500.jpeg", "https://content.jdmagicbox.com/comp/hyderabad/k6/040pxx40.xx40.170401144601.r9k6/catalogue/keerthi-girls-hostel-shamshabad-rangareddy-hostels-for-men-ida07hpi80.jpg"]
         },
         {
             "title": "Luxury Hostel in Banjara Hills",
-            "image": "https://aavaspayingguest.com/wp-content/uploads/2022/03/IMG-20210215-WA0009-1.jpg",
+            "image": "https://images.nobroker.in/img/5d01a7d6714b561a44cc15fc/5d01a7d6714b561a44cc15fc_63096_223986_original.jpg",
             "price": 300,
             "rating": 4.9,
             "reviews": 150,
@@ -213,11 +213,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
             "description": "A luxurious private room in the serene surroundings of Banjara Hills.",
             "amenities": ["Wifi", "Jacuzzi", "Mini Bar", "Room Service"],
-            "images": ["/images/banjara_luxury1.jpg", "/images/banjara_luxury2.jpg"]
+            "images": ["https://aavaspayingguest.com/wp-content/uploads/2022/03/IMG-20210215-WA0009-1.jpg", "https://images.nobroker.in/img/5d01a7d6714b561a44cc15fc/5d01a7d6714b561a44cc15fc_63096_223986_original.jpg"]
         },
         {
             "title": "Cozy Stay in Banjara Hills",
-            "image": "https://media-cdn.tripadvisor.com/media/photo-s/0e/df/fc/16/blue-ocean-hotel.jpg",
+            "image": "https://images.nobroker.in/images/8a9fbf828393a4fe018393b06da9049f/8a9fbf828393a4fe018393b06da9049f_2775_343592_large.jpg",
             "price": 180,
             "rating": 4.6,
             "reviews": 100,
@@ -228,11 +228,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
             "description": "A cozy shared room with modern amenities in Banjara Hills.",
             "amenities": ["Wifi", "Shared Kitchen", "Air Conditioning"],
-            "images": ["/images/banjara_cozy1.jpg", "/images/banjara_cozy2.jpg"]
+            "images": ["https://media-cdn.tripadvisor.com/media/photo-s/0e/df/fc/16/blue-ocean-hotel.jpg", "https://images.nobroker.in/images/8a9fbf828393a4fe018393b06da9049f/8a9fbf828393a4fe018393b06da9049f_2775_343592_large.jpg"]
         },
         {
             "title": "Budget Dormitory in Banjara Hills",
-            "image": "https://aavaspayingguest.com/wp-content/uploads/2022/07/IMG-20220717-WA0006.jpg",
+            "image": "https://th.bing.com/th/id/OIP.ifeRlFKybIy0FOsjg4bxUAHaEl?w=800&h=495&rs=1&pid=ImgDetMain",
             "price": 100,
             "rating": 4.3,
             "reviews": 70,
@@ -243,11 +243,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
             "description": "Affordable dormitory accommodation in the heart of Banjara Hills.",
             "amenities": ["Shared Kitchen", "Free Wifi", "Laundry", "Heating"],
-            "images": ["/images/banjara_budget1.jpg", "/images/banjara_budget2.jpg"]
+            "images": ["https://aavaspayingguest.com/wp-content/uploads/2022/07/IMG-20220717-WA0006.jpg", "https://th.bing.com/th/id/OIP.ifeRlFKybIy0FOsjg4bxUAHaEl?w=800&h=495&rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Classic Stay in Banjara Hills",
-            "image": "https://img.cofynd.com/images/latest_images_2024/5ca2cc816f3f63c97d7c54b83d9fca6e1482225a.webp",
+            "image": "https://images.nobroker.in/img/5e972b08a5a1662dac0a6a2a/5e972b08a5a1662dac0a6a2a_96998_919398_original.jpg",
             "price": 150,
             "rating": 4.4,
             "reviews": 60,
@@ -258,11 +258,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
             "description": "A classic shared room in the heart of Banjara Hills.",
             "amenities": ["Free Wifi", "Shared Kitchen", "Laundry", "Air Conditioning"],
-            "images": ["/images/banjara_classic1.jpg", "/images/banjara_classic2.jpg"]
+            "images": ["https://img.cofynd.com/images/latest_images_2024/5ca2cc816f3f63c97d7c54b83d9fca6e1482225a.webp", "https://images.nobroker.in/img/5e972b08a5a1662dac0a6a2a/5e972b08a5a1662dac0a6a2a_96998_919398_original.jpg"]
         },
         {
             "title": "Exclusive Hostel in Banjara Hills",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/v1657610698/Website/CMS-Uploads/pvvvyweknocthbb46ck3.jpg",
+            "image": "https://teja12.kuikr.com/is/a/c/880x425/public/images/apartments/original_img/nrzlfd.gif",
             "price": 220,
             "rating": 4.7,
             "reviews": 110,
@@ -273,11 +273,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
             "description": "An exclusive shared room with premium facilities in Banjara Hills.",
             "amenities": ["Gym", "Wifi", "Air Conditioning", "24/7 Security"],
-            "images": ["/images/banjara_exclusive1.jpg", "/images/banjara_exclusive2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/v1657610698/Website/CMS-Uploads/pvvvyweknocthbb46ck3.jpg", "https://teja12.kuikr.com/is/a/c/880x425/public/images/apartments/original_img/nrzlfd.gif"]
         },
         {
             "title": "Affordable Dorm in Banjara Hills",
-            "image": "https://cofynd-staging.s3.ap-south-1.amazonaws.com/images/latest_images_2024/9304fdecbe1722db5856ec4bc14dec619fd0067d.webp",
+            "image": "https://www.careerindia.com/college-photos/520x380/6446/campus_1643121534.jpg",
             "price": 800,
             "rating": 4.2,
             "reviews": 50,
@@ -288,11 +288,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/product-photographer-doing-his-job-studio_23-2148970265.jpg?t=st=1732120926~exp=1732124526~hmac=ed551b129f879de16df02cbf892c52c0c8db9014737a1c3a19d23e9ca0c00847&w=996",
             "description": "A budget-friendly dormitory with all essential amenities in Banjara Hills.",
             "amenities": ["Free Wifi", "Laundry", "Heating"],
-            "images": ["/images/banjara_affordable1.jpg", "/images/banjara_affordable2.jpg"]
+            "images": ["https://cofynd-staging.s3.ap-south-1.amazonaws.com/images/latest_images_2024/9304fdecbe1722db5856ec4bc14dec619fd0067d.webp", "https://www.careerindia.com/college-photos/520x380/6446/campus_1643121534.jpg"]
         },
         {
             "title": "Bright Room in Banjara Hills",
-            "image": "https://www.stanzaliving.com/_next/image?url=https:%2F%2Fres.cloudinary.com%2Fstanza-living%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fe_improve%2Fe_sharpen:10%2Fe_saturation:10%2Ff_auto%2Cq_auto%2Fv1658149270%2FWebsite%2FCMS-Uploads%2Fuvukyadb1pvk7hpzecbz.jpg&w=750&q=75",
+            "image": "https://img.studyclap.com/img/institute/college/original/6463/glc-thrissur-701d23b9e3.jpg",
             "price": 170,
             "rating": 4.6,
             "reviews": 90,
@@ -303,11 +303,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/man-standing-front-van-medium-shot_23-2148653394.jpg?t=st=1732120966~exp=1732124566~hmac=399c8d9f8d6ba838841fc83f07b08329274e0a07bcd5d699ad2cd0091e80fc48&w=996",
             "description": "A bright and spacious shared room in a premium location of Banjara Hills.",
             "amenities": ["Wifi", "Shared Kitchen", "Laundry"],
-            "images": ["/images/banjara_bright1.jpg", "/images/banjara_bright2.jpg"]
+            "images": ["https://www.stanzaliving.com/_next/image?url=https:%2F%2Fres.cloudinary.com%2Fstanza-living%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fe_improve%2Fe_sharpen:10%2Fe_saturation:10%2Ff_auto%2Cq_auto%2Fv1658149270%2FWebsite%2FCMS-Uploads%2Fuvukyadb1pvk7hpzecbz.jpg&w=750&q=75", "https://img.studyclap.com/img/institute/college/original/6463/glc-thrissur-701d23b9e3.jpg"]
         },
         {
             "title": "Stylish Hostel in Banjara Hills",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/v1585230194/Website/CMS-Uploads/mcuwhhmwudzwatt2mqjt.jpg",
+            "image": "https://img.staticmb.com/mbphoto/pg/grd1/cropped_images/2020/Feb/20/Photo_h400_w540/GR1-12091-278023_400_540.jpg",
             "price": 260,
             "rating": 4.8,
             "reviews": 130,
@@ -318,11 +318,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/portrait-smiling-businesswoman-holding-tablet_274689-56728.jpg?w=996",
             "description": "A stylish private room with modern furnishings in Banjara Hills.",
             "amenities": ["Wifi", "Mini Bar", "Jacuzzi", "Room Service"],
-            "images": ["/images/banjara_stylish1.jpg", "/images/banjara_stylish2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/v1585230194/Website/CMS-Uploads/mcuwhhmwudzwatt2mqjt.jpg", "https://img.staticmb.com/mbphoto/pg/grd1/cropped_images/2020/Feb/20/Photo_h400_w540/GR1-12091-278023_400_540.jpg"]
         },
         {
             "title": "Modern Stay in Hitech City",
-            "image": "https://qph.cf2.quoracdn.net/main-qimg-10d58f17978a2cef16ef92f76a92fb83-lq",
+            "image": "https://newprojects.99acres.com/projects/unknown/lakeview_residency/images/152569_3.jpg",
             "price": 250,
             "rating": 4.9,
             "reviews": 140,
@@ -333,11 +333,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A modern private room in the bustling tech hub of Hitech City.",
             "amenities": ["Wifi", "Air Conditioning", "Smart TV", "Free Parking"],
-            "images": ["/images/hitech_modern1.jpg", "/images/hitech_modern2.jpg"]
+            "images": ["https://qph.cf2.quoracdn.net/main-qimg-10d58f17978a2cef16ef92f76a92fb83-lq", "https://newprojects.99acres.com/projects/unknown/lakeview_residency/images/152569_3.jpg"]
         },
         {
             "title": "Peaceful Hostel in Hitech City",
-            "image": "https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2021/Aug/18/Photo_h400_w540/GR2-219121-1046495_400_540.jpeg",
+            "image": "https://images.nobroker.in/images/8a9f8aec701f55560170233cf8fb4a5c/8a9f8aec701f55560170233cf8fb4a5c_94509_74056_large.jpg",
             "price": 190,
             "rating": 4.7,
             "reviews": 110,
@@ -348,11 +348,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/portrait-smiling-businesswoman-holding-tablet_274689-56728.jpg?w=996",
             "description": "A peaceful shared room in a serene neighborhood of Hitech City.",
             "amenities": ["Wifi", "Shared Kitchen", "Laundry", "Air Conditioning"],
-            "images": ["/images/hitech_peaceful1.jpg", "/images/hitech_peaceful2.jpg"]
+            "images": ["https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2021/Aug/18/Photo_h400_w540/GR2-219121-1046495_400_540.jpeg", "https://images.nobroker.in/images/8a9f8aec701f55560170233cf8fb4a5c/8a9f8aec701f55560170233cf8fb4a5c_94509_74056_large.jpg"]
         },
         {
             "title": "Affordable Dormitory in Hitech City",
-            "image": "https://www.eklavyaoverseas.com/uploads/galleries/mbbs-abroad.jpg",
+            "image": "https://th.bing.com/th/id/OIP.tEQDGcCT-JcZc23uAO07LwHaFj?rs=1&pid=ImgDetMain",
             "price": 120,
             "rating": 4.4,
             "reviews": 80,
@@ -363,11 +363,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "An affordable dormitory with all necessary amenities in Hitech City.",
             "amenities": ["Free Wifi", "Laundry", "Shared Kitchen"],
-            "images": ["/images/hitech_affordable1.jpg", "/images/hitech_affordable2.jpg"]
+            "images": ["https://www.eklavyaoverseas.com/uploads/galleries/mbbs-abroad.jpg", "https://th.bing.com/th/id/OIP.tEQDGcCT-JcZc23uAO07LwHaFj?rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Luxury Stay in Hitech City",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/v1684736969/Website/CMS-Uploads/PRAJ9874_5_6_xdrxay.jpg",
+            "image": "https://th.bing.com/th/id/OIP.nOk9L7j_oNmPc2qDVKtMvgHaFo?rs=1&pid=ImgDetMain",
             "price": 320,
             "rating": 4.9,
             "reviews": 170,
@@ -378,11 +378,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/portrait-smiling-businesswoman-holding-tablet_274689-56728.jpg?w=996",
             "description": "A luxurious private room in the vibrant Hitech City area.",
             "amenities": ["Wifi", "Jacuzzi", "Room Service", "Mini Bar"],
-            "images": ["/images/hitech_luxury1.jpg", "/images/hitech_luxury2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/v1684736969/Website/CMS-Uploads/PRAJ9874_5_6_xdrxay.jpg", "https://th.bing.com/th/id/OIP.nOk9L7j_oNmPc2qDVKtMvgHaFo?rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Classic Room in Hitech City",
-            "image": "https://www.tenanto.in/property_uploads/7_1711091570.jpg",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/c1/53/8c/mysore-youth-hostel.jpg?w=1100&h=-1&s=1",
             "price": 220,
             "rating": 4.6,
             "reviews": 100,
@@ -393,11 +393,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A classic shared room with modern amenities in Hitech City.",
             "amenities": ["Wifi", "Air Conditioning", "Smart TV"],
-            "images": ["/images/hitech_classic1.jpg", "/images/hitech_classic2.jpg"]
+            "images": ["https://www.tenanto.in/property_uploads/7_1711091570.jpg", "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/c1/53/8c/mysore-youth-hostel.jpg?w=1100&h=-1&s=1"]
         },
         {
             "title": "Stylish Hostel in Hitech City",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/v1679379482/Website/CMS-Uploads/PXL_3891_2_3_v1rvaf.jpg",
+            "image": "https://th.bing.com/th/id/OIP.oUk15913OH045SS_xjQdLAHaJ4?w=750&h=1000&rs=1&pid=ImgDetMain",
             "price": 280,
             "rating": 4.8,
             "reviews": 150,
@@ -408,11 +408,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A stylish private room with premium amenities in the heart of Hitech City.",
             "amenities": ["Air Conditioning", "Wifi", "Room Service", "Laundry"],
-            "images": ["/images/hitech_stylish1.jpg", "/images/hitech_stylish2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/v1679379482/Website/CMS-Uploads/PXL_3891_2_3_v1rvaf.jpg", "https://th.bing.com/th/id/OIP.oUk15913OH045SS_xjQdLAHaJ4?w=750&h=1000&rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Bright Stay in Hitech City",
-            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/82/1b/2f/gostops-goa-baga.jpg?w=700&h=-1&s=1",
+            "image": "https://www.careerindia.com/college-photos/520x380/8484/sant-longowal-institute-of-engineering-and-technology-longowal-hostel_1463048852.jpg",
             "price": 170,
             "rating": 4.5,
             "reviews": 70,
@@ -423,11 +423,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A bright shared room with modern facilities and easy access to Hitech City.",
             "amenities": ["Wifi", "Shared Kitchen", "Laundry"],
-            "images": ["/images/hitech_bright1.jpg", "/images/hitech_bright2.jpg"]
+            "images": ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/82/1b/2f/gostops-goa-baga.jpg?w=700&h=-1&s=1", "https://www.careerindia.com/college-photos/520x380/8484/sant-longowal-institute-of-engineering-and-technology-longowal-hostel_1463048852.jpg."]
         },
         {
             "title": "Comfy Dormitory in Hitech City",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/v1584983963/Website/CMS-Uploads/chqb8oaumze4xiijexta.jpg",
+            "image": "https://www.ramauniversity.ac.in/campus-tour/lakhanpur/_05c9853%20(50).jpg",
             "price": 130,
             "rating": 4.4,
             "reviews": 60,
@@ -438,11 +438,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A comfortable and affordable dormitory with all essential amenities.",
             "amenities": ["Free Wifi", "Laundry", "Heating"],
-            "images": ["/images/hitech_comfy1.jpg", "/images/hitech_comfy2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/v1584983963/Website/CMS-Uploads/chqb8oaumze4xiijexta.jpg", "https://www.ramauniversity.ac.in/campus-tour/lakhanpur/_05c9853%20(50).jpg"]
         },
         {
             "title": "Urban Hostel in Hitech City",
-            "image": "https://th.bing.com/th/id/OIP.pUM5gAqW3whXFPz9T2ORyQHaDZ?rs=1&pid=ImgDetMain",
+            "image": "https://th.bing.com/th/id/OIP.RGYon_-CHwUEwLqzEpPsmgAAAA?rs=1&pid=ImgDetMain",
             "price": 2100,
             "rating": 4.7,
             "reviews": 100,
@@ -453,11 +453,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A vibrant shared room with a lively atmosphere in Hitech City.",
             "amenities": ["Air Conditioning", "Wifi", "Shared Kitchen"],
-            "images": ["/images/hitech_urban1.jpg", "/images/hitech_urban2.jpg"]
+            "images": ["https://th.bing.com/th/id/OIP.pUM5gAqW3whXFPz9T2ORyQHaDZ?rs=1&pid=ImgDetMain", "https://th.bing.com/th/id/OIP.RGYon_-CHwUEwLqzEpPsmgAAAA?rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Backpacker Hostel in Hitech City",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/v1585641608/Website/CMS-Uploads/jngndizti95zwd5meio0.jpg",
+            "image": "https://th.bing.com/th/id/R.997e34e8252f7012c3c4433b319c469c?rik=EBoZHzEWVWxE5Q&riu=http%3a%2f%2fwww.dyppolyambi.com%2fimages%2fgallery%2f940by340%2fDSC_0378.JPG&ehk=%2bckcLwGUSQYnydKkJkb1i5sIgdePoA%2bpKo5IAt0ypa4%3d&risl=&pid=ImgRaw&r=0",
             "price": 100,
             "rating": 4.3,
             "reviews": 50,
@@ -468,11 +468,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "An affordable and convenient option for backpackers in Hitech City.",
             "amenities": ["Free Wifi", "Laundry", "Shared Kitchen"],
-            "images": ["/images/hitech_backpacker1.jpg", "/images/hitech_backpacker2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/v1585641608/Website/CMS-Uploads/jngndizti95zwd5meio0.jpg", "https://th.bing.com/th/id/R.997e34e8252f7012c3c4433b319c469c?rik=EBoZHzEWVWxE5Q&riu=http%3a%2f%2fwww.dyppolyambi.com%2fimages%2fgallery%2f940by340%2fDSC_0378.JPG&ehk=%2bckcLwGUSQYnydKkJkb1i5sIgdePoA%2bpKo5IAt0ypa4%3d&risl=&pid=ImgRaw&r=0"]
         },
         {
             "title": "Modern Hostel in Gachibowli",
-            "image": "https://rook.gumlet.io/uploads/center/cover_photo/5e0216ec09ba994708dc0d9a/PG_in_Peelamedu.jpeg?format=webp&h=auto&compress=true",
+            "image": "https://studybscnursinginbangalore.com/upload/gauthamibanner.jpg",
             "price": 240,
             "rating": 4.8,
             "reviews": 120,
@@ -483,7 +483,7 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A modern and luxurious private room located in Gachibowli.",
             "amenities": ["Wifi", "Air Conditioning", "Smart TV"],
-            "images": ["/images/gachibowli_modern1.jpg", "/images/gachibowli_modern2.jpg"]
+            "images": ["https://rook.gumlet.io/uploads/center/cover_photo/5e0216ec09ba994708dc0d9a/PG_in_Peelamedu.jpeg?format=webp&h=auto&compress=true", "https://studybscnursinginbangalore.com/upload/gauthamibanner.jpg"]
         },
         {
             "title": "Affordable Stay in Gachibowli",
@@ -498,11 +498,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A budget-friendly shared room in the bustling Gachibowli area.",
             "amenities": ["Free Wifi", "Shared Kitchen", "Laundry"],
-            "images": ["/images/gachibowli_affordable1.jpg", "/images/gachibowli_affordable2.jpg"]
+            "images": ["https://cofynd-staging.s3.ap-south-1.amazonaws.com/images/original/89bf6c14e69f542e1236ade70d5612651631d9eb.jpg", "/images/gachibowli_affordable2.jpg"]
         },
         {
             "title": "Stylish Dorm in Gachibowli",
-            "image": "https://th.bing.com/th/id/OIP.1JUo5WI6_tb3k17Gpy5TwwHaFj?w=1024&h=768&rs=1&pid=ImgDetMain",
+            "image": "https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/3799/2018/7/19/Maratha-Mandal-Engineering-College-Belgaum-Boys-Hostel.JPG",
             "price": 100,
             "rating": 4.3,
             "reviews": 60,
@@ -513,7 +513,7 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A stylish dormitory with modern interiors and shared facilities.",
             "amenities": ["Free Wifi", "Laundry", "Shared Kitchen"],
-            "images": ["/images/gachibowli_stylish1.jpg", "/images/gachibowli_stylish2.jpg"]
+            "images": ["https://th.bing.com/th/id/OIP.1JUo5WI6_tb3k17Gpy5TwwHaFj?w=1024&h=768&rs=1&pid=ImgDetMain", "https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/3799/2018/7/19/Maratha-Mandal-Engineering-College-Belgaum-Boys-Hostel.JPG"]
         },
         {
             "title": "Luxury Stay in Jubilee Hills",
@@ -528,11 +528,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A luxurious and spacious private room in the premium area of Jubilee Hills.",
             "amenities": ["Wifi", "Jacuzzi", "Room Service", "Mini Bar"],
-            "images": ["/images/jubilee_hills_luxury1.jpg", "/images/jubilee_hills_luxury2.jpg"]
+            "images": ["https://a.hwstatic.com/image/upload/f_auto,q_auto/v1/propertyimages/2/299125/ojystkqsoefqu986mgyz", "/images/jubilee_hills_luxury2.jpg"]
         },
         {
             "title": "Comfy Hostel in Jubilee Hills",
-            "image": "https://thumbs.dreamstime.com/z/backpackers-hostel-modern-bunk-beds-dorm-room-twelve-people-inside-79935795.jpg",
+            "image": "https://th.bing.com/th/id/OIP.PISX3bN8WP9KFHc5IPGVUgAAAA?w=270&h=360&rs=1&pid=ImgDetMain",
             "price": 180,
             "rating": 4.6,
             "reviews": 100,
@@ -543,11 +543,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A cozy and comfortable shared room in Jubilee Hills with great amenities.",
             "amenities": ["Wifi", "Air Conditioning", "Shared Kitchen"],
-            "images": ["/images/jubilee_hills_comfy1.jpg", "/images/jubilee_hills_comfy2.jpg"]
+            "images": ["https://thumbs.dreamstime.com/z/backpackers-hostel-modern-bunk-beds-dorm-room-twelve-people-inside-79935795.jpg", "https://th.bing.com/th/id/OIP.PISX3bN8WP9KFHc5IPGVUgAAAA?w=270&h=360&rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Budget Dorm in Jubilee Hills",
-            "image": "https://abrokenbackpack.com/wp-content/uploads/2017/07/czech-inn-1.jpg",
+            "image": "https://th.bing.com/th/id/OIP.rwlmd_3c_23cg66RnYx1DAHaJ4?w=960&h=1280&rs=1&pid=ImgDetMain",
             "price": 120,
             "rating": 4.4,
             "reviews": 70,
@@ -558,11 +558,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "An affordable dormitory in the posh area of Jubilee Hills with essential facilities.",
             "amenities": ["Free Wifi", "Shared Kitchen", "Laundry"],
-            "images": ["/images/jubilee_hills_budget1.jpg", "/images/jubilee_hills_budget2.jpg"]
+            "images": ["https://abrokenbackpack.com/wp-content/uploads/2017/07/czech-inn-1.jpg", "/https://th.bing.com/th/id/OIP.rwlmd_3c_23cg66RnYx1DAHaJ4?w=960&h=1280&rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Cozy Stay in Kondapur",
-            "image": "https://th.bing.com/th/id/OIP.fJm6QvBljPsbNpdayzBxjQHaE7?rs=1&pid=ImgDetMain",
+            "image": "https://th.bing.com/th/id/R.ce7124bbd91b0c5ce6d43d0683738b3f?rik=m4H2OJaeoGbzaw&riu=http%3a%2f%2faravupvc.com%2fimages%2fgallery%2fcommercial.jpg&ehk=bgY5E7KBnHer8rmGytFaIbQZhgdLytUaEpvah8qNAIc%3d&risl=&pid=ImgRaw&r=0",
             "price": 200,
             "rating": 4.7,
             "reviews": 110,
@@ -573,7 +573,7 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A cozy and spacious shared room near IT hubs in Kondapur.",
             "amenities": ["Wifi", "Air Conditioning", "Shared Kitchen"],
-            "images": ["/images/kondapur_cozy1.jpg", "/images/kondapur_cozy2.jpg"]
+            "images": ["https://th.bing.com/th/id/OIP.fJm6QvBljPsbNpdayzBxjQHaE7?rs=1&pid=ImgDetMain", "https://th.bing.com/th/id/R.ce7124bbd91b0c5ce6d43d0683738b3f?rik=m4H2OJaeoGbzaw&riu=http%3a%2f%2faravupvc.com%2fimages%2fgallery%2fcommercial.jpg&ehk=bgY5E7KBnHer8rmGytFaIbQZhgdLytUaEpvah8qNAIc%3d&risl=&pid=ImgRaw&r=0"]
         },
         {
             "title": "Budget-Friendly Dorm in Kondapur",
@@ -588,11 +588,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A budget-friendly dormitory in Kondapur with easy access to public transport.",
             "amenities": ["Free Wifi", "Laundry"],
-            "images": ["/images/kondapur_budget1.jpg", "/images/kondapur_budget2.jpg"]
+            "images": ["https://th.bing.com/th/id/R.f24c9e647ccd1d460106113582df8506?rik=36W9temddpH9bw&riu=http%3a%2f%2fwww.starhostels.in%2fimages%2fresidences%2fshree-shridhar%2fgalley%2f14.jpg&ehk=NJr0O2DetxCuQDiVNISXjz5JDpM%2fbFzIHejXmk1d7Cs%3d&risl=&pid=ImgRaw&r=0", "/images/kondapur_budget2.jpg"]
         },
         {
             "title": "Premium Hostel in Kondapur",
-            "image": "https://th.bing.com/th/id/R.08baf9239cafe2d400ce609a00fba408?rik=K1uUce5SxH6w%2bA&riu=http%3a%2f%2fwww.suas.ac.in%2fwp-content%2fuploads%2f2017%2f11%2fsymbiosis-hostel-room-inside-500x334.jpg&ehk=PtZve1kSXziIaLFtjyqkjiv1a9GFvX4kOuVlZLNG9Vk%3d&risl=&pid=ImgRaw&r=0",
+            "image": "https://th.bing.com/th/id/OIP.LD2aCBc3XYl8rrJsJfU4vAAAAA?w=225&h=300&rs=1&pid=ImgDetMain",
             "price": 280,
             "rating": 4.8,
             "reviews": 140,
@@ -603,7 +603,7 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360g",
             "description": "A premium private room offering modern amenities in Kondapur.",
             "amenities": ["Wifi", "Room Service", "Air Conditioning"],
-            "images": ["/images/kondapur_premium1.jpg", "/images/kondapur_premium2.jpg"]
+            "images": ["https://th.bing.com/th/id/R.08baf9239cafe2d400ce609a00fba408?rik=K1uUce5SxH6w%2bA&riu=http%3a%2f%2fwww.suas.ac.in%2fwp-content%2fuploads%2f2017%2f11%2fsymbiosis-hostel-room-inside-500x334.jpg&ehk=PtZve1kSXziIaLFtjyqkjiv1a9GFvX4kOuVlZLNG9Vk%3d&risl=&pid=ImgRaw&r=0", "https://th.bing.com/th/id/OIP.LD2aCBc3XYl8rrJsJfU4vAAAAA?w=225&h=300&rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Classic Stay in Begumpet",
@@ -618,11 +618,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A classic shared room in Begumpet with a peaceful environment.",
             "amenities": ["Wifi", "Shared Kitchen"],
-            "images": ["/images/begumpet_classic1.jpg", "/images/begumpet_classic2.jpg"]
+            "images": ["https://img.staticmb.com/mbphoto/pg/grd1/cropped_images/2021/Jul/13/Photo_h400_w540/GR1-1083-360831_400_540.jpeg", "/images/begumpet_classic2.jpg"]
         },
         {
             "title": "Affordable Dorm in Begumpet",
-            "image": "https://th.bing.com/th/id/OIP.L1PcvL-QR8zUfMXv9Vq_kAHaE8?rs=1&pid=ImgDetMain",
+            "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/04/21/Project-Photo-4-Okay-Plus-Hare-Krishna-Homes-Jaipur-5072925_600_800_310_462.jpg",
             "price": 120,
             "rating": 4.4,
             "reviews": 70,
@@ -633,7 +633,7 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "An affordable dormitory located in Begumpet, ideal for budget travelers.",
             "amenities": ["Free Wifi", "Laundry"],
-            "images": ["/images/begumpet_affordable1.jpg", "/images/begumpet_affordable2.jpg"]
+            "images": ["https://th.bing.com/th/id/OIP.L1PcvL-QR8zUfMXv9Vq_kAHaE8?rs=1&pid=ImgDetMain", "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/04/21/Project-Photo-4-Okay-Plus-Hare-Krishna-Homes-Jaipur-5072925_600_800_310_462.jpg"]
         },
         {
             "title": "Luxury Room in Begumpet",
@@ -648,11 +648,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A luxurious private room offering premium amenities in Begumpet.",
             "amenities": ["Wifi", "Mini Bar", "Jacuzzi"],
-            "images": ["/images/begumpet_luxury1.jpg", "/images/begumpet_luxury2.jpg"]
+            "images": ["https://goto.plus/booking/genericwebssi/imaging.php?image=https://occupancy.plus/images/rooms/4425f2805797fdf24c691053d23edbda.jpg", "/images/begumpet_luxury2.jpg"]
         },
         {
             "title": "Peaceful Stay near Hussain Sagar",
-            "image": "https://hostelgeeks.com/wp-content/uploads/2019/03/zostel-mumbai-best-hostels-in-mumbai-india.jpg",
+            "image": "https://img.staticmb.com/mbphoto/pg/grd1/cropped_images/2021/Jul/13/Photo_h400_w540/GR1-1083-360831_400_540.jpeg",
             "price": 170,
             "rating": 4.5,
             "reviews": 80,
@@ -663,11 +663,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A peaceful shared room near the scenic Hussain Sagar Lake.",
             "amenities": ["Free Wifi", "Shared Kitchen", "Laundry"],
-            "images": ["/images/hussain_sagar_peaceful1.jpg", "/images/hussain_sagar_peaceful2.jpg"]
+            "images": ["https://hostelgeeks.com/wp-content/uploads/2019/03/zostel-mumbai-best-hostels-in-mumbai-india.jpg", "https://img.staticmb.com/mbphoto/pg/grd1/cropped_images/2021/Jul/13/Photo_h400_w540/GR1-1083-360831_400_540.jpeg"]
         },
         {
             "title": "Budget Hostel near Hussain Sagar",
-            "image": "https://i.pinimg.com/originals/81/5c/a5/815ca5ffcce8a31de00884e9dc259d31.jpg",
+            "image": "https://th.bing.com/th/id/OIP.9Bs8ESF3JYzsvrb4BXWa5gAAAA?rs=1&pid=ImgDetMain",
             "price": 130,
             "rating": 4.3,
             "reviews": 50,
@@ -678,11 +678,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A budget hostel with dormitory facilities near Hussain Sagar Lake.",
             "amenities": ["Wifi", "Shared Kitchen"],
-            "images": ["/images/hussain_sagar_budget1.jpg", "/images/hussain_sagar_budget2.jpg"]
+            "images": ["https://i.pinimg.com/originals/81/5c/a5/815ca5ffcce8a31de00884e9dc259d31.jpg", "https://th.bing.com/th/id/OIP.9Bs8ESF3JYzsvrb4BXWa5gAAAA?rs=1&pid=ImgDetMain"]
         },
         {
             "title": "Scenic Room near Hussain Sagar",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/v1660632493/Website/CMS-Uploads/uvmclqdqisp6bxe9yoic.jpg",
+            "image": "https://images.static-collegedunia.com/public/college_data/images/campusimage/15043359361463647155hos.png",
             "price": 250,
             "rating": 4.8,
             "reviews": 110,
@@ -693,7 +693,7 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/free-photo/smiling-man-standing-with-arms-crossed_107420-84953.jpg?t=st=1732121387~exp=1732124987~hmac=f4b0fed9cc1ee908b4c930de8444da06a0ce661bf8845d87c996e33b6a405507&w=360",
             "description": "A scenic private room offering beautiful lake views near Hussain Sagar.",
             "amenities": ["Wifi", "Air Conditioning", "Room Service"],
-            "images": ["/images/hussain_sagar_scenic1.jpg", "/images/hussain_sagar_scenic2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/v1660632493/Website/CMS-Uploads/uvmclqdqisp6bxe9yoic.jpg", "https://images.static-collegedunia.com/public/college_data/images/campusimage/15043359361463647155hos.png"]
         },
         {
             "title": "Modern Stay in Shamshabad",
@@ -708,11 +708,11 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "A modern shared room near Shamshabad with excellent facilities.",
             "amenities": ["Wifi", "Shared Kitchen", "Laundry"],
-            "images": ["/images/shamshabad_modern1.jpg", "/images/shamshabad_modern2.jpg"]
+            "images": ["https://b117436.smushcdn.com/117436/wp-content/uploads/2020/05/stanza-living-katraj-pune-paying-guest-accommodations-for-men-scaled-1.jpg?lossy=2&strip=1&webp=1", "/images/shamshabad_modern2.jpg"]
         },
         {
             "title": "Affordable Dorm in Shamshabad",
-            "image": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/v1587973662/NewWebsite/media/Stanza_Living_room.jpg",
+            "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-19-Residency-Mayura-Chennai-5011584_600_800_310_462.JPEG",
             "price": 100,
             "rating": 4.2,
             "reviews": 40,
@@ -723,11 +723,11 @@ const hostelData = [
             "hostImage":"https://img.freepik.com/premium-photo/portrait-smiling-businesswoman-holding-tablet_274689-56728.jpg?w=996",
             "description": "An affordable dormitory with ample beds in Shamshabad.",
             "amenities": ["Free Wifi", "Laundry"],
-            "images": ["/images/shamshabad_affordable1.jpg", "/images/shamshabad_affordable2.jpg"]
+            "images": ["https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/v1587973662/NewWebsite/media/Stanza_Living_room.jpg", "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-19-Residency-Mayura-Chennai-5011584_600_800_310_462.JPEG"]
         },
         {
             "title": "Elegant Room in Shamshabad",
-            "image": "https://sulcdn.azureedge.net/biz-live/img-web/10731904-1569649739240-8414.jpeg",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2d/fa/9f/cd/property-building.jpg?w=1200&h=-1&s=1",
             "price": 270,
             "rating": 4.9,
             "reviews": 120,
@@ -738,7 +738,7 @@ const hostelData = [
             "hostImage": "https://img.freepik.com/premium-photo/male-nurse-analyzing-xray-desk-hospital_1215445-2625.jpg?w=996",
             "description": "An elegant private room with luxurious amenities in Shamshabad.",
             "amenities": ["Wifi", "Room Service", "Jacuzzi"],
-            "images": ["/images/shamshabad_elegant1.jpg", "/images/shamshabad_elegant2.jpg"]
+            "images": ["https://sulcdn.azureedge.net/biz-live/img-web/10731904-1569649739240-8414.jpeg", "https://dynamic-media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/2d/fa/9f/cd/property-building.jpg?w=1200&h=-1&s=1"]
         }
         
         

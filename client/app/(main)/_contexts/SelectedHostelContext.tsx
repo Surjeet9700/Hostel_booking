@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-// Booking interface with cancellation details
+// Booking interface with cancellation and confirmation details
 export interface Booking {
   bookingId: string;
   hostelId: string;
@@ -10,7 +10,7 @@ export interface Booking {
   endDate: string;
   totalPrice: number;
   confirmationCode: string;
-  status?: 'active' | 'canceled';
+  status?: 'active' | 'confirmed' | 'canceled'; // Added 'confirmed'
   cancellationReason?: string;
 }
 
@@ -34,10 +34,11 @@ export type Hostel = {
   image?: string;
 };
 
-// Context type including the cancelBooking function
+// Context type including the cancelBooking and confirmBooking functions
 type SelectedHostelContextType = {
   bookings: Booking[];
   cancelBooking: (id: string, reason: string, shouldPersist?: boolean) => void;
+  confirmBooking: (id: string, shouldPersist?: boolean) => void; // Added confirmBooking
   selectedHostel: Hostel | null;
   setSelectedHostel: (hostel: Hostel | null) => void;
   startDate: Date | undefined;
@@ -183,10 +184,35 @@ export const SelectedHostelProvider: React.FC<{ children: ReactNode }> = ({ chil
     });
   };
 
+  // Function to confirm a booking
+  const confirmBooking = (bookingId: string, shouldPersist: boolean = true) => {
+    console.log(`Confirming Booking with ID: ${bookingId}`); // Debugging
+    setBookings(prev => {
+      const updatedBookings: Booking[] = prev.map(b =>
+        b.bookingId === bookingId
+          ? { ...b, status: 'confirmed' }
+          : b
+      );
+      console.log("Updated Bookings after Confirmation:", updatedBookings); // Debugging
+
+      if (shouldPersist) {
+        try {
+          localStorage.setItem('bookings', JSON.stringify(updatedBookings));
+          console.log("Saved Bookings to localStorage:", updatedBookings); // Debugging
+        } catch (error) {
+          console.error("Failed to save bookings to localStorage:", error);
+        }
+      }
+
+      return updatedBookings;
+    });
+  };
+
   return (
     <SelectedHostelContext.Provider value={{
       bookings,
       cancelBooking,
+      confirmBooking, // Added confirmBooking
       selectedHostel,
       setSelectedHostel,
       startDate,

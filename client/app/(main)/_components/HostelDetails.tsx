@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 import {
   Dialog,
@@ -19,8 +19,8 @@ import {
 } from "@/components/ui/dialog";
 
 import { Label } from '@/components/ui/label';
-import { useSelectedHostel } from '../_contexts/SelectedHostelContext'; // Added import
-import { startOfToday, isBefore } from 'date-fns'; // Added import for date-fns
+import { useSelectedHostel } from '../_contexts/SelectedHostelContext'; 
+import { startOfToday, isBefore } from 'date-fns'; 
 import MapView from './MapView';
 
 type Hostel = {
@@ -38,8 +38,8 @@ type Hostel = {
   price: number;
   description: string;
   amenities: string[];
-  images?: string[]; // Optional array
-  image?: string;    // Optional single image
+  images?: string[]; 
+  image?: string;    
 };
 
 
@@ -54,7 +54,7 @@ const HostelDetails: React.FC<HostelDetailsProps> = ({ room }) => {
   const [showAllAmenities, setShowAllAmenities] = useState(false);
 
   const router = useRouter();
-  const { addBooking, setSelectedHostel, startDate, setStartDate, endDate, setEndDate } = useSelectedHostel(); // Moved inside the component
+  const {  setSelectedHostel, startDate, setStartDate, endDate, setEndDate } = useSelectedHostel(); // Moved inside the component
 
   const today = startOfToday(); // Define today's date
 
@@ -119,23 +119,23 @@ const HostelDetails: React.FC<HostelDetailsProps> = ({ room }) => {
       return;
     }
 
-    const confirmationCode = Math.random().toString(36).substring(2, 10).toUpperCase();
+    // const confirmationCode = Math.random().toString(36).substring(2, 10).toUpperCase();
 
     // Create a new booking object
-    const newBooking = {
-      bookingId: uuidv4(), 
-      hostelId: room._id,      
-      startDate: startDate.toISOString(),
-      endDate: endDate.toISOString(),
-      totalPrice,
-      confirmationCode,       
-    };
+    // const newBooking = {
+    //   bookingId: uuidv4(), 
+    //   hostelId: room._id,      
+    //   startDate: startDate.toISOString(),
+    //   endDate: endDate.toISOString(),
+    //   totalPrice,
+    //   confirmationCode,       
+    // };
   
     // Add the booking to the context
-    addBooking(newBooking, false);
+    // addBooking(newBooking, false);
   
     setSelectedHostel(room);
-    router.push(`/payment?confirmationCode=${confirmationCode}`);
+    router.push(`/payment`);
   };
 
   return (
@@ -236,7 +236,7 @@ const HostelDetails: React.FC<HostelDetailsProps> = ({ room }) => {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">Location</h3>
             {/* integrate a map here */}
-            <div className="h-32 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+            <div className="h-32 bg-gray-200 rounded-lg  flex items-center justify-center mb-4">
             <MapView 
                 locations={[
                   {
@@ -247,7 +247,7 @@ const HostelDetails: React.FC<HostelDetailsProps> = ({ room }) => {
                 marker={[randomLat, randomLng]}  
                 center={[randomLat, randomLng]}  
                 zoom={12} 
-                className="w-full h-52" 
+                className="w-full h-52 z-10" 
                 showPriceMarkers={false}
               />
             </div>
@@ -263,7 +263,7 @@ const HostelDetails: React.FC<HostelDetailsProps> = ({ room }) => {
               <div className="w-1/2 pr-2">
                 <Label className="block text-sm font-medium text-gray-700 mb-1">Check-in</Label>
                 <Dialog>
-                  <DialogTrigger asChild>
+                  <DialogTrigger asChild className='z-50'>
                     <Button variant="outline" className="w-full justify-start">
                       {startDate ? startDate.toLocaleDateString() : 'Select date'}
                     </Button>

@@ -63,7 +63,7 @@ const PaymentPage: React.FC = () => {
         <div className="flex items-center gap-3 mb-8">
           <button
             onClick={() => router.back()}
-            className="p-1 rounded-full hover:bg-gray-200"
+            className="p-1 rounded-full "
             aria-label="Go back to previous page"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -199,7 +199,7 @@ const PaymentPage: React.FC = () => {
             <div className="relative w-full h-96 mb-4">
               <Carousel showArrows={true} showThumbs={false} infiniteLoop={true}>
                 {images.map((image, index) => (
-                  <div key={index} className="relative w-full h-full">
+                  <div key={index} className="relative w-full h-[500px]">
                     <img 
                       src={image} 
                       alt={`Room view ${index + 1}`} 
@@ -351,7 +351,7 @@ const PaymentPage: React.FC = () => {
                 <Input
                   id="name"
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="cillian Murphy"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className={errors.name ? 'border-red-500' : ''}
