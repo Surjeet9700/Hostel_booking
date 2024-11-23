@@ -28,7 +28,7 @@ export const Logo = () => {
             />
             
             <p className={cn("font-semibold", font.className)}>
-                Hostel
+                Smart Stay
             </p>
         </div>
      );

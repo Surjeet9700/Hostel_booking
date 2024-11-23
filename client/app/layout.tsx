@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hostel Booking",
+  title: "Smart Stay ",
   description: "Book hostel rooms and more",
   icons:[
     {
